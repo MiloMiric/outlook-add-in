@@ -9,8 +9,8 @@
   <DisplayName DefaultValue="Load Details Inserter"/>
   <Description DefaultValue="Insert formatted load details into email body."/>
   
-  <IconUrl DefaultValue="https://deltafreightsystems.sharepoint.com/:i:/s/DeltaGroupLogistics/EemLhrRqzy9JqtFigSL8THUB3napw3GFFTbY0K1Qyd1YZw?e=bYJlBi"/>
-  <HighResolutionIconUrl DefaultValue="https://deltafreightsystems.sharepoint.com/:i:/s/DeltaGroupLogistics/EQH6MqHlgcFLsBmDZHqcvhEB1yDed7t5MZGU257DsoTkGA?e=12qVdG"/>
+  <IconUrl DefaultValue="https://github.com/MiloMiric/outlook-add-in/blob/main/icon16.png"/>
+  <HighResolutionIconUrl DefaultValue="https://github.com/MiloMiric/outlook-add-in/blob/main/icon64.png"/>
 
   <Hosts>
     <Host Name="Mailbox"/>
