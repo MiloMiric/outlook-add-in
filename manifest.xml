@@ -25,7 +25,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://deltafreightsystems.sharepoint.com/:u:/s/DeltaGroupLogistics/EQmjyTtf-0xDiWjPFKUCBD0BAs8N-xMdjVq4Zje7e5V0ww?e=uoHEOU"/>
+        <SourceLocation DefaultValue="https://github.com/MiloMiric/outlook-add-in/blob/main/taskPane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
