@@ -28,22 +28,57 @@ function run() {
   const rcvrCheckIn = formatDate(new Date(now.getTime() + 6 * 60 * 60 * 1000)); // +6 hours
 
   const htmlTable = `
-    <p style="font-family: Arial, sans-serif;">Load details:</p>
-    <table style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 13px;">
-      <tr style="background-color: #cce5ff;">
-        <th style="padding: 6px 10px; border: 1px solid #000; white-space: nowrap;">Item</th>
-        <th style="padding: 6px 10px; border: 1px solid #000;">Details</th>
-      </tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">Load #</td><td style="padding: 6px 10px; border: 1px solid #000;">0158770</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">BOL#</td><td style="padding: 6px 10px; border: 1px solid #000;">2862744</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">Cust Ref#</td><td style="padding: 6px 10px; border: 1px solid #000;">2862744</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">Route</td><td style="padding: 6px 10px; border: 1px solid #000;">Mogadore, OH → Amanda, OH</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">Status</td><td style="padding: 6px 10px; border: 1px solid #000;">Arrived at shipper, still not loaded, in dock 8</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">Shipper Check-In</td><td style="padding: 6px 10px; border: 1px solid #000;">${checkIn}</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">Shipper Check-Out</td><td style="padding: 6px 10px; border: 1px solid #000;">${checkOut}</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">RCVR Check-In</td><td style="padding: 6px 10px; border: 1px solid #000;">${rcvrCheckIn}</td></tr>
-      <tr><td style="padding: 6px 10px; border: 1px solid #000;">RCVR Check-Out</td><td style="padding: 6px 10px; border: 1px solid #000;">Pending</td></tr>
-    </table>
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+      <div style="background-color: #007BFF; color: white; padding: 15px; text-align: center; font-size: 20px; font-weight: bold;">
+        📦 Load Details Summary
+      </div>
+      <table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
+        <thead>
+          <tr style="background-color: #f1f1f1;">
+            <th style="padding: 12px; border: 1px solid #ddd;">Item</th>
+            <th style="padding: 12px; border: 1px solid #ddd;">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Load #</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">0158770</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">BOL#</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">2862744</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Cust Ref#</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">2862744</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Route</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Mogadore, OH → Amanda, OH</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Status</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Arrived at shipper, still not loaded, in dock 8</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Shipper Check-In</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">${checkIn}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">Shipper Check-Out</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">${checkOut}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">RCVR Check-In</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">${rcvrCheckIn}</td>
+          </tr>
+          <tr>
+            <td style="padding: 10px; border: 1px solid #ddd;">RCVR Check-Out</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   `;
 
   item.body.setSelectedDataAsync(htmlTable, { coercionType: Office.CoercionType.Html }, result => {
