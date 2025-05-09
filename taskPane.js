@@ -1,9 +1,15 @@
 Office.onReady(() => {
-  run(); // Run immediately when task pane loads
+  // Wait 500ms to make sure the item is fully loaded (you can adjust this if needed)
+  setTimeout(run, 500);
 });
 
 function run() {
   const item = Office.context.mailbox.item;
+
+  if (!item || !item.body) {
+    console.error("Mailbox item is not available.");
+    return;
+  }
 
   const htmlTable = `
     <p style="font-family: Arial, sans-serif;">Load Details:</p>
@@ -27,6 +33,8 @@ function run() {
   item.body.setSelectedDataAsync(htmlTable, { coercionType: Office.CoercionType.Html }, result => {
     if (result.status !== Office.AsyncResultStatus.Succeeded) {
       console.error("Insert error:", result.error.message);
+    } else {
+      console.log("Table inserted successfully!");
     }
   });
 }
