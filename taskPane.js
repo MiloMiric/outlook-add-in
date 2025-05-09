@@ -1,6 +1,6 @@
 Office.onReady(() => {
   // Wait 500ms to make sure the item is fully loaded (you can adjust this if needed)
-  setTimeout(run, 500);
+  setTimeout(run, 100);
 });
 
 function run() {
@@ -12,7 +12,7 @@ function run() {
   }
 
   const htmlTable = `
-    <p style="font-family: Arial, sans-serif;">Load Details:</p>
+    <p style="font-family: Arial, sans-serif;">Load details:</p>
     <table style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 13px;">
       <tr style="background-color: #cce5ff;">
         <th style="padding: 6px 10px; border: 1px solid #000; white-space: nowrap;">Item</th>
