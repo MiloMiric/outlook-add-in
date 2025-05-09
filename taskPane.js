@@ -1,6 +1,6 @@
 Office.onReady(() => {
   // Wait 500ms to make sure the item is fully loaded (you can adjust this if needed)
-  setTimeout(run, 100);
+  setTimeout(run, 500);
 });
 
 function run() {
