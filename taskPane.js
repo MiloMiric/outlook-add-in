@@ -1,5 +1,5 @@
 Office.onReady(() => {
-  document.getElementById("run").onclick = run;
+  run(); // Run immediately when task pane loads
 });
 
 function run() {
