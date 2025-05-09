@@ -15,7 +15,7 @@ function run() {
     const localDateTime = now.toLocaleString('en-US', options);
 
     const htmlTable = `
-        <p style="font-family: Arial, sans-serif;">Load Details:</p>
+        <p style="font-family: Arial, sans-serif;">Load details:</p>
         <table style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 13px;">
           <tr style="background-color: #cce5ff;">
             <th style="padding: 6px 10px; border: 1px solid #000; white-space: nowrap;">Item</th>
