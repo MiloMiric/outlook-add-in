@@ -28,53 +28,53 @@ function run() {
   const rcvrCheckIn = formatDate(new Date(now.getTime() + 6 * 60 * 60 * 1000)); // +6 hours
 
   const htmlTable = `
-    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
-      <div style="background-color: #007BFF; color: white; padding: 15px; text-align: center; font-size: 20px; font-weight: bold;">
+    <div style="font-family: Arial, sans-serif; max-width: 420px; margin: 15px auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); overflow: hidden;">
+      <div style="background-color: #007BFF; color: white; padding: 10px; text-align: center; font-size: 14px; font-weight: bold;">
         📦 Load Details Summary
       </div>
-      <table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 14px; text-align: center;">
+      <table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif; font-size: 10px; text-align: center;">
         <thead>
           <tr style="background-color: #f1f1f1;">
-            <th style="padding: 12px; border: 1px solid #ddd;">Item</th>
-            <th style="padding: 12px; border: 1px solid #ddd;">Details</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Item</th>
+            <th style="padding: 8px; border: 1px solid #ddd;">Details</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Load #</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">0158770</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Load #</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">0158770</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">BOL#</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">2862744</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">BOL#</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">2862744</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Cust Ref#</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">2862744</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Cust Ref#</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">2862744</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Route</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Mogadore, OH → Amanda, OH</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Route</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Mogadore, OH → Amanda, OH</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Status</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Arrived at shipper, still not loaded, in dock 8</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Status</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Arrived at shipper, still not loaded, in dock 8</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Shipper Check-In</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">${checkIn}</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Shipper Check-In</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">${checkIn}</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">Shipper Check-Out</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">${checkOut}</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Shipper Check-Out</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">${checkOut}</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">RCVR Check-In</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">${rcvrCheckIn}</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">RCVR Check-In</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">${rcvrCheckIn}</td>
           </tr>
           <tr>
-            <td style="padding: 10px; border: 1px solid #ddd;">RCVR Check-Out</td>
-            <td style="padding: 10px; border: 1px solid #ddd;">Pending</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">RCVR Check-Out</td>
+            <td style="padding: 7px; border: 1px solid #ddd;">Pending</td>
           </tr>
         </tbody>
       </table>
