@@ -28,6 +28,7 @@ function run() {
   const rcvrCheckIn = formatDate(new Date(now.getTime() + 6 * 60 * 60 * 1000)); // +6 hours
 
   const htmlTable = `
+<p> Dear customer, <p/>
     <div style="font-family: Arial, sans-serif; max-width: 420px; margin: 15px auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); overflow: hidden;">
       <div style="background-color: #007BFF; color: white; padding: 10px; text-align: center; font-size: 14px; font-weight: bold;">
         📦 Load Details Summary
